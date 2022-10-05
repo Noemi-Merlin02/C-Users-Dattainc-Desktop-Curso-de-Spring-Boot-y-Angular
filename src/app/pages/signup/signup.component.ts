@@ -43,7 +43,6 @@ return;
 this.userService.añadirUsuario(this.user).subscribe(
   (data) => {
     console.log(data);
-    alert('Usuario guardado con exito');
 Swal.fire('usuario guardado','usuario registrado con exito en el sistema','success')
 
   }, (error) =>{

@@ -22,6 +22,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { AuthInterceptorProviders } from './services/auth.interceptor';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
@@ -29,14 +30,11 @@ import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboa
     AppComponent,
     NavbarComponent,
     SignupComponent,
+    HomeComponent,
      LoginComponent,
      DashboardComponent,
-     UserDashboardComponent,
-    
-   
-    
-
-  ],
+     UserDashboardComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -51,7 +49,6 @@ import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboa
     MatIconModule,
     CommonModule,
     FormsModule
-   
   ],
   providers: [AuthInterceptorProviders],
   bootstrap: [AppComponent]

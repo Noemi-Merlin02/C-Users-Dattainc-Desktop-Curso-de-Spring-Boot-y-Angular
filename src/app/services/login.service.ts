@@ -28,6 +28,7 @@ return this.http.get(`${baserUrl}/actual-usuario`);
   // iniciamos sesion y establecemos el token en el localStorage
   public loginUser(token:any){
 localStorage.setItem('token',token);
+return true;
   }
   public isLoggedIn(){
 let tokenStr = localStorage.getItem('token');

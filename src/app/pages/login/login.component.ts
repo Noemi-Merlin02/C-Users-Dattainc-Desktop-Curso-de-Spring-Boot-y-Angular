@@ -32,13 +32,14 @@ duration:3000
 })
 return;
     }
-    if(this.loginData.username.trim() ==  '' || this.loginData.username.trim() == null){
+    if(this.loginData.password.trim() ==  '' || this.loginData.password.trim() == null){
       this.snack.open('La contraseña de usuario es requerida !!', 'Aceptar',{
       duration:3000
       
       })
       return;
           }
+
 
 this.loginService.generateToken(this.loginData).subscribe(
   (data: any) => {
